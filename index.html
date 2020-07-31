@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ben Whitehurst - Web Developer</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+<article class="hero">
+    <div class="hero-inner">
+      <h1> Hi, my name is Ben Whitehurst<br>
+      and I make web applications</h1>
+    </div>
+</article>
+
+  <div class="navigation">  
+    <nav>
+      <ul>
+        <li><a href="#intro">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <article id="intro" class="intro">
+    <div class="head">
+      <h2>intro</h2>
+     </div>
+    <div class="group">
+      <div class="item">
+        <img class="me" src="images/me.png" alt="image of myself">
+      </div>
+      <div class="item">
+        <p>I'm a web developer based out of Plano, Texas.
+          I'm currently enrolled in the Bloc.io Web Development track. </p>
+      </div>
+    </div>
+  </article>
+  <hr>
+
+  <article id="about" class="about">
+    <div class="head">
+      <h2>about</h2>
+     </div>
+      <div class="group">
+        <div class="item">
+          <p>I'm excited to start my career in Web Developement.
+          I love the problem solving and creative process of writing code.
+          I look forward to learning and working with other developers!
+          Languges I know include HTML, CSS, Javascript and Python.</p>
+          <p>When i'm not coding i enjoy weight lifting, Judo, gardening,
+          audiobooks.</p>
+        </div>
+      </div>
+    </article>
+    <hr>
+
+    <article id="portfolio" class="portfolio">
+      <div class="head">
+        <h2>portfolio</h2>
+       </div>
+      <div class="group cards">
+        <div class="item work one">
+          <h2>project 1</h2>
+          <p>content here</p>
+        </div>
+        <div class="item work two">
+          <h2>project 2</h2>
+          <p>content here</p>
+        </div>
+        <div class="item  work three">
+          <h2>project 3</h2>
+          <p>content here</p>
+        </div>
+      </div>    
+    </article>
+    <hr>
+    <article id='contact'>
+      <div class="head">
+        <h2>contact</h2>
+       </div>
+
+      <!-- form -->
+      
+      <form action="https://formspree.io/ben.whitehurst@protonmail.com" method="post">
+
+        <label for="name">your name:</label>
+        <input id="name" type="text" name="name">
+      
+        <label for="email">your email:</label>
+        <input id="email" type="email" name="email">
+      
+        <label for="form-message">Your message:</label>
+        <textarea id="form-message" name="message"></textarea>
+      </form>
+
+        <nav class ="contact-nav">
+          <a href="https://github.com/benmw123"><img src ="images/github-mark.png" width='25' alt='github'></a>
+          <a href="https://www.linkedin.com/in/ben-whitehurst/"><img src ="images/linkedin-circle.png" width='25' alt='linkedin'></a>
+          <a href="mailto:ben.whitehurst@protonmail.com"><img src ="images/email.png" width='25' alt='email'></a>
+        </nav>
+      </article>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

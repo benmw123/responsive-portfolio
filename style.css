@@ -1,0 +1,238 @@
+body {
+ margin: 0;
+ font-family: sans-serif;
+ background-color: white;
+ scroll-behavior: smooth;
+}
+hr {
+  margin: 0 5% 0 5%;
+}
+
+/* The hero image */
+
+.hero {
+  /* using vw and vh so hero section takes up whole browser */
+  width: 100vw;
+  height: 100vh;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+/*linear-gradient is used to darken hero image so text is easier to read*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/code.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-inner {
+  color: white;
+  font-size: 28px;
+}
+
+/*navigation bar*/
+
+.navigation {
+  background-color: #27272F;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.navigation nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation nav ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0;
+}
+
+.navigation nav ul li last-child a {
+  margin-right: 0; 
+}
+
+/*intro*/
+
+.head {
+  margin: 10%;
+}
+h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 75px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color:#27272F;
+}
+
+form input[type=text], form input[type=email] {
+  font-size: 16px;
+  margin-bottom: 20px;
+  width: 75%;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 75%;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/*width is same as img so everything aligns*/
+.item p {
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+.me {
+  border-radius: 3%;
+  height: 400px;
+  width: 300px;
+}
+
+.cards { 
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-evenly; 
+  margin: 10% 5% 10% 5%;        
+}
+
+.work {
+  background-color: #27272F; 
+  min-height: 225px;
+  min-width:  250px;
+  max-height: 225px;
+  max-width:  250px;
+  border-radius: 5%;
+  margin: 5%;
+  color: white;
+}
+
+.work p{
+  width: auto;
+}
+
+.contact-nav {
+  padding: 5px;
+  text-align: center;
+}
+
+.contact-nav a {
+  padding: 15px;
+  text-decoration: none;
+}
+
+/* media queries for desktop */
+@media all and (min-width: 900px) {
+
+  .hero-inner {
+    font-size: 54px;
+  }
+
+  .navigation nav ul {
+    justify-content: left;
+    margin-left: 15%;
+    font-size: 20px;
+  }
+
+  .navigation nav ul li a {
+    text-align: left;
+    margin-right: 75px;
+  }
+
+  .head {
+      margin: 10% 10% 0 10%;
+  }
+
+  h2 { 
+    font-size: 42px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .me {
+    height: 600px;
+    width: 450px;
+    margin: 10% 12.5% 25% 25%;
+  }
+
+  .item p {
+    text-align: left;
+    width: 450px;
+    margin: 0% 25% 25% 12.5%;
+    font-size: 34px;
+  }
+  .about div div p {
+    text-align: center;
+    padding: 20px;
+    margin: 0 5% 0 5%;
+    width: auto;
+  }
+
+  .work { 
+    min-height: 300px;
+    min-width:  325px;
+    max-height: 300px;
+    max-width:  325px;
+  }
+
+  .contact-nav {
+    text-align: left;
+    margin-left: 15%;
+    padding: 0;
+  }
+
+  .contact-nav a {
+    padding-left: 0;
+    padding-right: 100px;
+  }
+
+  form {
+    margin-left: 15%;
+  }
+
+}
+
+
