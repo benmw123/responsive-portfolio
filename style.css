@@ -115,6 +115,11 @@ form textarea {
   margin-bottom: 20px;
 }
 
+form button {
+  width: 25%;
+  margin-bottom: 5px;
+}
+
 /*width is same as img so everything aligns*/
 .item p {
   text-align: center;
