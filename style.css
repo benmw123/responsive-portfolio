@@ -153,16 +153,23 @@ form button {
   background-color: #27272F; 
   min-height: 250px;
   min-width:  250px;
-  max-height: 250px;
+  max-height: 285px;
   max-width: 250px;
   border-radius: 5%;
   margin: 5%;
   color: white;
-  text-decoration: none;
 }
 
-.one:hover {
-  box-shadow: 5px 5px black;
+.project-links {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.project-links-wrap {
+  margin-top: 7%;
+  margin-bottom: 7%; 
+  text-align: center; 
 }
 
 .work p {
