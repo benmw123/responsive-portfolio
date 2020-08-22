@@ -158,6 +158,11 @@ form button {
   border-radius: 5%;
   margin: 5%;
   color: white;
+  text-decoration: none;
+}
+
+.one:hover {
+  box-shadow: 5px 5px black;
 }
 
 .work p {
